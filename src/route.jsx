@@ -57,8 +57,6 @@ const AppRoutes = () => (
 			<Route path="business-registration" element={<BusinessRegistration />} />
 			<Route path="contact" element={<ContactPage />} />
 			<Route path="about-us" element={<AboutUsPage />} />
-			{/* <Route path="sign-up" element={<SignUpPage />} />
-			<Route path="sign-in" element={<SignInPage />} /> */}
 
 			{/* B2B routes */}
 			<Route path="restaurant-marketing" element={<RestaurantMarketingPage />} />
@@ -70,9 +68,11 @@ const AppRoutes = () => (
 			<Route path="blog" element={<BlogPage />} />
 			<Route path="support" element={<SupportPage />} />
 		</Route>
+
 		{/* Auth Layout */}
 		<Route path="/restaurant-sign-in" element={<RestaurantSignIn />} />
 		<Route path="/restaurant-sign-up" element={<RestaurantSignUp />} />
+
 		{/* Protected Backend Layout */}
 		<Route
 			path="/dashboard/*"
@@ -97,9 +97,11 @@ const AppRoutes = () => (
 			<Route path="review-manage/:id" element={<ReviewManage />} />
 			<Route path="*" element={<PageNotFound />} />
 		</Route>
+
 		{/* Unauthorised Route */}
 		<Route path="/unauthorised" element={<UnauthorisedPage />} />
-		{/* Fallback Route */}96
+		{/* Fallback Route */}
+
 		<Route path="*" element={<PageNotFound />} />
 	</Routes>
 );

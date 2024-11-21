@@ -1,7 +1,6 @@
-import React, {useState, useRef, useEffect, useContext} from 'react';
-import {RxCross2} from 'react-icons/rx'; // Close icon
+import React, {useState, useRef, useEffect} from 'react';
+import {RxCross2} from 'react-icons/rx';
 import {Link, useNavigate, useLocation} from 'react-router-dom';
-import {IoIosLogOut} from 'react-icons/io'; // Logout icon
 import {FaAngleRight, FaAngleDown} from 'react-icons/fa6';
 import {Menu} from '../../ui-share/Icon';
 
@@ -147,20 +146,14 @@ export default function Header() {
 					>
 						Pricing
 					</Link>
-					<Link to="/blog" className={`text-gray-700 hover:text-gray-900 ${isActive('/blog') ? 'font-bold' : ''}`}>
-						Blog
-					</Link>
-					{/* <Link
-						to="/support"
-						className={`text-gray-700 hover:text-gray-900 ${isActive('/support') ? 'font-bold' : ''}`}
-					>
-						Support
-					</Link> */}
 					<Link
 						to="/business-registration"
-						className={`text-gray-700 hover:text-gray-900 ${isActive('/support') ? 'font-bold' : ''}`}
+						className={`text-gray-700 hover:text-gray-900 ${isActive('/business-registration') ? 'font-bold' : ''}`}
 					>
 						Business Registration
+					</Link>
+					<Link to="/blog" className={`text-gray-700 hover:text-gray-900 ${isActive('/blog') ? 'font-bold' : ''}`}>
+						Blog
 					</Link>
 				</nav>
 

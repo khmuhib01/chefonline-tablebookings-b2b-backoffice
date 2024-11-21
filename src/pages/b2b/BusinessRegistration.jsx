@@ -13,11 +13,10 @@ export default function BusinessRegistration() {
 	return (
 		<>
 			<PageTitle title="Sign Up" description="Home Page Description" />
-			<div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 gap-y-10">
+			<div className="flex flex-col items-center justify-center bg-[#F7F8FA] py-10 gap-y-10">
 				<div className="flex flex-col gap-5 w-full max-w-[800px]">
 					<div className="flex flex-col gap-y-5">
 						<h2 className="text-center text-4xl font-bold">Get started</h2>
-						{/* <img src="images/logo.png" alt="rest_01" className="m-auto" /> */}
 						<p className="text-center text-bodyText text-xl">
 							Join our 15,000+ restaurant partners. Leave your contact details in the form below and we’ll get in touch
 							with you soon.
@@ -27,13 +26,6 @@ export default function BusinessRegistration() {
 					<div className="grid grid-cols-2 gap-y-3">
 						<div className="md:col-span-1 col-span-2">
 							<h3 className="text-center text-xl font-bold">Already a TableBooking partner?</h3>
-							{/* <button
-							className="bg-button text-white p-2 rounded-lg hover:bg-buttonHover"
-							onClick={() => (window.location.href = '/restaurant-sign-in')}
-						>
-							Log in
-						</button> */}
-
 							<Link to="/sign-in" className="text-blue-500 text-center block">
 								Log in
 							</Link>
