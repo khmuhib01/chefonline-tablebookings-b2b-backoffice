@@ -156,8 +156,11 @@ export default function RestaurantSignIn() {
 												</div>
 											</div>
 											<div className="mb-4 flex justify-center gap-2 items-start">
-												<p>I didn't register any business</p>
-												<Link to="/restaurant-sign-up" className="text-blue-500 hover:underline">
+												<p>I didn't register my business</p>
+												<Link
+													to="https://www.tablebookings.co.uk/become-a-partner"
+													className="text-blue-500 hover:underline"
+												>
 													Business Registration
 												</Link>
 											</div>
