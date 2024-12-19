@@ -41,11 +41,12 @@ export default function Navbar() {
 						icon: <BiBookAlt size={25} />,
 						text: 'Availability',
 					},
-					{
-						to: `/dashboard/review-manage/${userType === 'admin' ? user.res_uuid : storeRestaurantId}`,
-						icon: <BiBookAlt size={25} />,
-						text: 'Review Manage',
-					},
+					/* Don't remove we will use it later */
+					// {
+					// 	to: `/dashboard/review-manage/${userType === 'admin' ? user.res_uuid : storeRestaurantId}`,
+					// 	icon: <BiBookAlt size={25} />,
+					// 	text: 'Review Manage',
+					// },
 			  ]
 			: userType === 'super_admin'
 			? [

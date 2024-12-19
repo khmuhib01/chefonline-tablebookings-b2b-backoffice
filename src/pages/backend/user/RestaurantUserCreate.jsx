@@ -306,7 +306,8 @@ export default function RestaurantUserCreate() {
 								>
 									<option value="">Select a type</option>
 									<option value="admin">Admin</option>
-									<option value="staff">Staff</option>
+									{/* Don't remove we will use it later */}
+									{/* <option value="staff">Staff</option> */}
 								</select>
 								{errors.userType && <span className="text-sm text-red-500">{errors.userType}</span>}
 							</div>
