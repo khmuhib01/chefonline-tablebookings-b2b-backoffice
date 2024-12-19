@@ -66,9 +66,7 @@ export default function Header() {
 					</Link>
 				</div>
 
-				{/* Navigation for desktop */}
 				<nav className="hidden lg:flex items-center gap-8 relative">
-					{/* Dropdown for "Solutions" */}
 					<div className="relative">
 						<button
 							onMouseEnter={() => setDropdownOpen(true)}
@@ -115,7 +113,7 @@ export default function Header() {
 									Table Management
 								</Link>
 								<Link
-									to="/table-management"
+									to="#"
 									className={`block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900 ${
 										isActive('/table-management') ? 'font-bold' : ''
 									}`}
@@ -123,7 +121,7 @@ export default function Header() {
 									Mobile App
 								</Link>
 								<Link
-									to="/table-management"
+									to="#"
 									className={`block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900 ${
 										isActive('/table-management') ? 'font-bold' : ''
 									}`}
@@ -146,25 +144,22 @@ export default function Header() {
 					>
 						Pricing
 					</Link>
-					{/* <Link
-						to="/business-registration"
+					<Link
+						to="https://www.tablebookings.co.uk/become-a-partner"
 						className={`text-gray-700 hover:text-gray-900 ${isActive('/business-registration') ? 'font-bold' : ''}`}
 					>
 						Business Registration
-					</Link> */}
+					</Link>
 					<Link to="/blog" className={`text-gray-700 hover:text-gray-900 ${isActive('/blog') ? 'font-bold' : ''}`}>
 						Blog
+					</Link>
+					<Link to="/contact" className={`text-gray-700 hover:text-gray-900 ${isActive('/blog') ? 'font-bold' : ''}`}>
+						Contact Us
 					</Link>
 				</nav>
 
 				<div className="flex items-center gap-3">
 					<div className="hidden lg:flex items-center gap-3">
-						{/* <Link
-							to="/sign-up"
-							className="border border-button text-button px-4 py-2 rounded-md hover:bg-buttonHover hover:text-white"
-						>
-							Sign up
-						</Link> */}
 						<Link to="/restaurant-sign-in" className="bg-button text-white px-4 py-2 rounded-md hover:bg-buttonHover">
 							Log in
 						</Link>
@@ -203,11 +198,17 @@ export default function Header() {
 									<Link to="/restaurant-marketing" className="text-gray-700 hover:text-blue-500">
 										Restaurant Marketing
 									</Link>
-									<Link to="/solutions/feature2" className="text-gray-700 hover:text-blue-500">
-										Feature 2
+									<Link to="/reservation-management" className="text-gray-700 hover:text-blue-500">
+										Reservation Management
 									</Link>
-									<Link to="/solutions/feature3" className="text-gray-700 hover:text-blue-500">
-										Feature 3
+									<Link to="/table-management" className="text-gray-700 hover:text-blue-500">
+										Table Management
+									</Link>
+									<Link to="#" className="text-gray-700 hover:text-blue-500">
+										Widget
+									</Link>
+									<Link to="#" className="text-gray-700 hover:text-blue-500">
+										Mobile App
 									</Link>
 								</div>
 							)}
@@ -216,13 +217,16 @@ export default function Header() {
 							Integrations
 						</Link>
 						<Link to="/pricing" className="text-gray-700 hover:text-blue-500">
-							Plans & Pricing
+							Plans
+						</Link>
+						<Link to="https://www.tablebookings.co.uk/become-a-partner" className="text-gray-700 hover:text-blue-500">
+							Business Registration
 						</Link>
 						<Link to="/blog" className="text-gray-700 hover:text-blue-500">
 							Blog
 						</Link>
-						<Link to="/support" className="text-gray-700 hover:text-blue-500">
-							Support
+						<Link to="/contact" className="text-gray-700 hover:text-blue-500">
+							Contact Us
 						</Link>
 					</nav>
 

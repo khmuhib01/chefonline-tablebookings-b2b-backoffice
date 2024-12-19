@@ -285,7 +285,7 @@ export default function MenuCreate() {
 							/>
 						</>
 					)}
-					<div className="flex items-center justify-between gap-5">
+					{/* <div className="flex items-center justify-between gap-5">
 						<div>
 							<h5 className="text-titleText font-bold">Reservable online</h5>
 							<p className="text-sm text-bodyText">
@@ -293,7 +293,7 @@ export default function MenuCreate() {
 							</p>
 						</div>
 						<ToggleSwitch checked={toggleChecked} onChange={handleToggleChange} disabled={isLoading} />
-					</div>
+					</div> */}
 					<div className="w-full flex items-center gap-3 justify-end mt-10">
 						<CustomButton
 							text={'Save'}
