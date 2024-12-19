@@ -146,12 +146,12 @@ export default function Header() {
 					>
 						Pricing
 					</Link>
-					<Link
+					{/* <Link
 						to="/business-registration"
 						className={`text-gray-700 hover:text-gray-900 ${isActive('/business-registration') ? 'font-bold' : ''}`}
 					>
 						Business Registration
-					</Link>
+					</Link> */}
 					<Link to="/blog" className={`text-gray-700 hover:text-gray-900 ${isActive('/blog') ? 'font-bold' : ''}`}>
 						Blog
 					</Link>
