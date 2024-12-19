@@ -150,7 +150,10 @@ export default function Header() {
 					>
 						Business Registration
 					</Link>
-					<Link to="/blog" className={`text-gray-700 hover:text-gray-900 ${isActive('/blog') ? 'font-bold' : ''}`}>
+					<Link
+						to="https://www.blog.tablebookings.co.uk"
+						className={`text-gray-700 hover:text-gray-900 ${isActive('/blog') ? 'font-bold' : ''}`}
+					>
 						Blog
 					</Link>
 					<Link to="/contact" className={`text-gray-700 hover:text-gray-900 ${isActive('/blog') ? 'font-bold' : ''}`}>
@@ -222,7 +225,7 @@ export default function Header() {
 						<Link to="https://www.tablebookings.co.uk/become-a-partner" className="text-gray-700 hover:text-blue-500">
 							Business Registration
 						</Link>
-						<Link to="/blog" className="text-gray-700 hover:text-blue-500">
+						<Link to="https://www.blog.tablebookings.co.uk" className="text-gray-700 hover:text-blue-500">
 							Blog
 						</Link>
 						<Link to="/contact" className="text-gray-700 hover:text-blue-500">
